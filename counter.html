@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="margin: auto;width: 500px;margin-top: 200px;background-color: bisque;">
+        <form style="text-align: center;padding:20px;">
+            <label>Enter a Value:</label>
+            <input type="number" id="num" value="0" style="text-align: right">
+            <div style="margin-top: 50px;">
+                <input type="button" onclick="add()" value="Add">
+                <input type="button" onclick="sub()" value="Subtract">
+                <input type="button" onclick="reset()" value="Reset"> 
+            </div>
+        </form>
+    </div>
+    <script>
+        var add=()=>{
+            let val=document.getElementById("num").value;
+            result=parseInt(val)+1;
+            document.getElementById("num").value=result;
+        }
+        var sub=()=>{
+            let val=document.getElementById("num").value;
+            result=parseInt(val)-1;
+            document.getElementById("num").value=result;
+        }
+        var reset=()=>{
+            document.getElementById("num").value="";
+        }
+
+    </script>
+</body>
+</html>
